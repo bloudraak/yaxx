@@ -1,0 +1,110 @@
+<!ELEMENT Literal (NULLTOKEN | TRUETOKEN | FALSETOKEN | NUMBER | STRING | CHAR47 | DIVEQUAL)>
+<!ELEMENT PrimaryExpr (THIS | IDENT | Literal | ArrayLiteral | (CHAR40,Expr,CHAR41) | (CHAR123,CHAR125) | (CHAR123,PropertyNameAndValueList,CHAR125))>
+<!ELEMENT ArrayLiteral ((CHAR91,ElisionOpt,CHAR93) | (CHAR91,ElementList,CHAR93) | (CHAR91,ElementList,CHAR44,ElisionOpt,CHAR93))>
+<!ELEMENT ElementList ((ElisionOpt,AssignmentExpr) | (ElementList,CHAR44,ElisionOpt,AssignmentExpr))>
+<!ELEMENT ElisionOpt (EMPTY | Elision)>
+<!ELEMENT Elision (CHAR44 | (Elision,CHAR44))>
+<!ELEMENT PropertyNameAndValueList ((PropertyName,CHAR58,AssignmentExpr) | (PropertyNameAndValueList,CHAR44,PropertyName,CHAR58,AssignmentExpr))>
+<!ELEMENT PropertyName (IDENT | STRING | NUMBER)>
+<!ELEMENT MemberExpr (PrimaryExpr | FunctionExpr | (MemberExpr,CHAR91,Expr,CHAR93) | (MemberExpr,CHAR46,IDENT) | (NEW,MemberExpr,Arguments))>
+<!ELEMENT NewExpr (MemberExpr | (NEW,NewExpr))>
+<!ELEMENT CallExpr ((MemberExpr,Arguments) | (CallExpr,Arguments) | (CallExpr,CHAR91,Expr,CHAR93) | (CallExpr,CHAR46,IDENT))>
+<!ELEMENT Arguments ((CHAR40,CHAR41) | (CHAR40,ArgumentList,CHAR41))>
+<!ELEMENT ArgumentList (AssignmentExpr | (ArgumentList,CHAR44,AssignmentExpr))>
+<!ELEMENT LeftHandSideExpr (NewExpr | CallExpr)>
+<!ELEMENT PostfixExpr (LeftHandSideExpr | (LeftHandSideExpr,PLUSPLUS) | (LeftHandSideExpr,MINUSMINUS))>
+<!ELEMENT UnaryExpr (PostfixExpr | (DELETE,UnaryExpr) | (VOID,UnaryExpr) | (TYPEOF,UnaryExpr) | (PLUSPLUS,UnaryExpr) | (AUTOPLUSPLUS,UnaryExpr) | (MINUSMINUS,UnaryExpr) | (AUTOMINUSMINUS,UnaryExpr) | (CHAR43,UnaryExpr) | (CHAR45,UnaryExpr) | (CHAR126,UnaryExpr) | (CHAR33,UnaryExpr))>
+<!ELEMENT MultiplicativeExpr (UnaryExpr | (MultiplicativeExpr,CHAR42,UnaryExpr) | (MultiplicativeExpr,CHAR47,UnaryExpr) | (MultiplicativeExpr,CHAR37,UnaryExpr))>
+<!ELEMENT AdditiveExpr (MultiplicativeExpr | (AdditiveExpr,CHAR43,MultiplicativeExpr) | (AdditiveExpr,CHAR45,MultiplicativeExpr))>
+<!ELEMENT ShiftExpr (AdditiveExpr | (ShiftExpr,LSHIFT,AdditiveExpr) | (ShiftExpr,RSHIFT,AdditiveExpr) | (ShiftExpr,URSHIFT,AdditiveExpr))>
+<!ELEMENT RelationalExpr (ShiftExpr | (RelationalExpr,CHAR60,ShiftExpr) | (RelationalExpr,CHAR62,ShiftExpr) | (RelationalExpr,LE,ShiftExpr) | (RelationalExpr,GE,ShiftExpr) | (RelationalExpr,INSTANCEOF,ShiftExpr) | (RelationalExpr,IN,ShiftExpr))>
+<!ELEMENT EqualityExpr (RelationalExpr | (EqualityExpr,EQEQ,RelationalExpr) | (EqualityExpr,NE,RelationalExpr) | (EqualityExpr,STREQ,RelationalExpr) | (EqualityExpr,STRNEQ,RelationalExpr))>
+<!ELEMENT BitwiseANDExpr (EqualityExpr | (BitwiseANDExpr,CHAR38,EqualityExpr))>
+<!ELEMENT BitwiseXORExpr (BitwiseANDExpr | (BitwiseXORExpr,CHAR94,BitwiseANDExpr))>
+<!ELEMENT BitwiseORExpr (BitwiseXORExpr | (BitwiseORExpr,CHAR124,BitwiseXORExpr))>
+<!ELEMENT LogicalANDExpr (BitwiseORExpr | (LogicalANDExpr,AND,BitwiseORExpr))>
+<!ELEMENT LogicalORExpr (LogicalANDExpr | (LogicalORExpr,OR,LogicalANDExpr))>
+<!ELEMENT ConditionalExpr (LogicalORExpr | (LogicalORExpr,CHAR63,AssignmentExpr,CHAR58,AssignmentExpr))>
+<!ELEMENT AssignmentExpr (ConditionalExpr)>
+<!ELEMENT NULLTOKEN (#PCDATA)>
+<!ELEMENT TRUETOKEN (#PCDATA)>
+<!ELEMENT FALSETOKEN (#PCDATA)>
+<!ELEMENT STRING (#PCDATA)>
+<!ELEMENT NUMBER (#PCDATA)>
+<!ELEMENT BREAK (#PCDATA)>
+<!ELEMENT CASE (#PCDATA)>
+<!ELEMENT DEFAULT (#PCDATA)>
+<!ELEMENT FOR (#PCDATA)>
+<!ELEMENT NEW (#PCDATA)>
+<!ELEMENT VAR (#PCDATA)>
+<!ELEMENT CONTINUE (#PCDATA)>
+<!ELEMENT FUNCTION (#PCDATA)>
+<!ELEMENT RETURN (#PCDATA)>
+<!ELEMENT VOID (#PCDATA)>
+<!ELEMENT DELETE (#PCDATA)>
+<!ELEMENT IF (#PCDATA)>
+<!ELEMENT THIS (#PCDATA)>
+<!ELEMENT DO (#PCDATA)>
+<!ELEMENT WHILE (#PCDATA)>
+<!ELEMENT ELSE (#PCDATA)>
+<!ELEMENT IN (#PCDATA)>
+<!ELEMENT INSTANCEOF (#PCDATA)>
+<!ELEMENT TYPEOF (#PCDATA)>
+<!ELEMENT SWITCH (#PCDATA)>
+<!ELEMENT WITH (#PCDATA)>
+<!ELEMENT RESERVED (#PCDATA)>
+<!ELEMENT THROW (#PCDATA)>
+<!ELEMENT TRY (#PCDATA)>
+<!ELEMENT CATCH (#PCDATA)>
+<!ELEMENT FINALLY (#PCDATA)>
+<!ELEMENT EQEQ (#PCDATA)>
+<!ELEMENT NE (#PCDATA)>
+<!ELEMENT STREQ (#PCDATA)>
+<!ELEMENT STRNEQ (#PCDATA)>
+<!ELEMENT LE (#PCDATA)>
+<!ELEMENT GE (#PCDATA)>
+<!ELEMENT OR (#PCDATA)>
+<!ELEMENT AND (#PCDATA)>
+<!ELEMENT PLUSPLUS (#PCDATA)>
+<!ELEMENT MINUSMINUS (#PCDATA)>
+<!ELEMENT LSHIFT (#PCDATA)>
+<!ELEMENT RSHIFT (#PCDATA)>
+<!ELEMENT URSHIFT (#PCDATA)>
+<!ELEMENT PLUSEQUAL (#PCDATA)>
+<!ELEMENT MINUSEQUAL (#PCDATA)>
+<!ELEMENT MULTEQUAL (#PCDATA)>
+<!ELEMENT DIVEQUAL (#PCDATA)>
+<!ELEMENT LSHIFTEQUAL (#PCDATA)>
+<!ELEMENT RSHIFTEQUAL (#PCDATA)>
+<!ELEMENT URSHIFTEQUAL (#PCDATA)>
+<!ELEMENT ANDEQUAL (#PCDATA)>
+<!ELEMENT MODEQUAL (#PCDATA)>
+<!ELEMENT XOREQUAL (#PCDATA)>
+<!ELEMENT OREQUAL (#PCDATA)>
+<!ELEMENT IDENT (#PCDATA)>
+<!ELEMENT AUTOPLUSPLUS (#PCDATA)>
+<!ELEMENT AUTOMINUSMINUS (#PCDATA)>
+<!ELEMENT CHAR47 (#PCDATA)>
+<!ELEMENT CHAR40 (#PCDATA)>
+<!ELEMENT CHAR41 (#PCDATA)>
+<!ELEMENT CHAR123 (#PCDATA)>
+<!ELEMENT CHAR125 (#PCDATA)>
+<!ELEMENT CHAR91 (#PCDATA)>
+<!ELEMENT CHAR93 (#PCDATA)>
+<!ELEMENT CHAR44 (#PCDATA)>
+<!ELEMENT CHAR58 (#PCDATA)>
+<!ELEMENT CHAR46 (#PCDATA)>
+<!ELEMENT CHAR43 (#PCDATA)>
+<!ELEMENT CHAR45 (#PCDATA)>
+<!ELEMENT CHAR126 (#PCDATA)>
+<!ELEMENT CHAR33 (#PCDATA)>
+<!ELEMENT CHAR42 (#PCDATA)>
+<!ELEMENT CHAR37 (#PCDATA)>
+<!ELEMENT CHAR60 (#PCDATA)>
+<!ELEMENT CHAR62 (#PCDATA)>
+<!ELEMENT CHAR38 (#PCDATA)>
+<!ELEMENT CHAR94 (#PCDATA)>
+<!ELEMENT CHAR124 (#PCDATA)>
+<!ELEMENT CHAR63 (#PCDATA)>
+<!ELEMENT CHAR61 (#PCDATA)>
+<!ELEMENT CHAR59 (#PCDATA)>

@@ -1,0 +1,2355 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="yaxx.xsl"?><!DOCTYPE Program id="726" SYSTEM "yaxx.dtd">
+<yaxx:Program id="726" xmlns:yaxx="urn:YAcc-Xml-eXtension">
+<yaxx:SourceElements id="725">
+<yaxx:SourceElements id="6db">
+<yaxx:SourceElements id="68f">
+<yaxx:SourceElements id="646">
+<yaxx:SourceElements id="5fc">
+<yaxx:SourceElements id="5ca">
+<yaxx:SourceElements id="52f">
+<yaxx:SourceElements id="1eb">
+<yaxx:SourceElement id="1ea">
+<yaxx:FunctionDeclaration id="1e9">
+<yaxx:FUNCTION id="0">function</yaxx:FUNCTION>
+<yaxx:IDENT id="1">createCookie</yaxx:IDENT>
+<yaxx:CHAR40 id="2">(</yaxx:CHAR40>
+<yaxx:FormalParameterList id="a">
+<yaxx:FormalParameterList id="7">
+<yaxx:FormalParameterList id="4">
+<yaxx:IDENT id="3">name</yaxx:IDENT>
+</yaxx:FormalParameterList>
+<yaxx:CHAR44 id="5">,</yaxx:CHAR44>
+<yaxx:IDENT id="6">value</yaxx:IDENT>
+</yaxx:FormalParameterList>
+<yaxx:CHAR44 id="8">,</yaxx:CHAR44>
+<yaxx:IDENT id="9">days</yaxx:IDENT>
+</yaxx:FormalParameterList>
+<yaxx:CHAR41 id="b">)</yaxx:CHAR41>
+<yaxx:FunctionBody id="1e8">
+<yaxx:CHAR123 id="c">{</yaxx:CHAR123>
+<yaxx:SourceElements id="1e6">
+<yaxx:SourceElements id="17e">
+<yaxx:SourceElement id="17d">
+<yaxx:Statement id="17c">
+<yaxx:IfStatement id="17b">
+<yaxx:IF id="d">if</yaxx:IF>
+<yaxx:CHAR40 id="e">(</yaxx:CHAR40>
+<yaxx:Expr id="2e">
+<yaxx:AssignmentExpr id="2d">
+<yaxx:ConditionalExpr id="2c">
+<yaxx:LogicalORExpr id="2a">
+<yaxx:LogicalANDExpr id="28">
+<yaxx:BitwiseORExpr id="26">
+<yaxx:BitwiseXORExpr id="24">
+<yaxx:BitwiseANDExpr id="22">
+<yaxx:EqualityExpr id="20">
+<yaxx:RelationalExpr id="1e">
+<yaxx:ShiftExpr id="1c">
+<yaxx:AdditiveExpr id="1a">
+<yaxx:MultiplicativeExpr id="18">
+<yaxx:UnaryExpr id="17">
+<yaxx:PostfixExpr id="16">
+<yaxx:LeftHandSideExpr id="14">
+<yaxx:NewExpr id="13">
+<yaxx:MemberExpr id="11">
+<yaxx:PrimaryExpr id="10">
+<yaxx:IDENT id="f">days</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR41 id="2f">)</yaxx:CHAR41>
+<yaxx:Statement id="150">
+<yaxx:Block id="14f">
+<yaxx:CHAR123 id="30">{</yaxx:CHAR123>
+<yaxx:SourceElements id="14d">
+<yaxx:SourceElements id="10f">
+<yaxx:SourceElements id="5f">
+<yaxx:SourceElement id="5e">
+<yaxx:Statement id="5d">
+<yaxx:VariableStatement id="5c">
+<yaxx:VAR id="31">var</yaxx:VAR>
+<yaxx:VariableDeclarationList id="5a">
+<yaxx:VariableDeclaration id="59">
+<yaxx:IDENT id="32">date</yaxx:IDENT>
+<yaxx:Initializer id="58">
+<yaxx:CHAR61 id="33">=</yaxx:CHAR61>
+<yaxx:AssignmentExpr id="57">
+<yaxx:ConditionalExpr id="56">
+<yaxx:LogicalORExpr id="54">
+<yaxx:LogicalANDExpr id="52">
+<yaxx:BitwiseORExpr id="50">
+<yaxx:BitwiseXORExpr id="4e">
+<yaxx:BitwiseANDExpr id="4c">
+<yaxx:EqualityExpr id="4a">
+<yaxx:RelationalExpr id="48">
+<yaxx:ShiftExpr id="46">
+<yaxx:AdditiveExpr id="44">
+<yaxx:MultiplicativeExpr id="42">
+<yaxx:UnaryExpr id="41">
+<yaxx:PostfixExpr id="40">
+<yaxx:LeftHandSideExpr id="3e">
+<yaxx:NewExpr id="3d">
+<yaxx:MemberExpr id="3b">
+<yaxx:NEW id="34">new</yaxx:NEW>
+<yaxx:MemberExpr id="37">
+<yaxx:PrimaryExpr id="36">
+<yaxx:IDENT id="35">Date</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="3a">
+<yaxx:CHAR40 id="38">(</yaxx:CHAR40>
+<yaxx:CHAR41 id="39">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Initializer>
+</yaxx:VariableDeclaration>
+</yaxx:VariableDeclarationList>
+<yaxx:CHAR59 id="5b">;</yaxx:CHAR59>
+</yaxx:VariableStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="10e">
+<yaxx:Statement id="10d">
+<yaxx:ExprStatement id="10c">
+<yaxx:Expr id="10a">
+<yaxx:AssignmentExpr id="109">
+<yaxx:ConditionalExpr id="108">
+<yaxx:LogicalORExpr id="106">
+<yaxx:LogicalANDExpr id="104">
+<yaxx:BitwiseORExpr id="102">
+<yaxx:BitwiseXORExpr id="100">
+<yaxx:BitwiseANDExpr id="fe">
+<yaxx:EqualityExpr id="fc">
+<yaxx:RelationalExpr id="fa">
+<yaxx:ShiftExpr id="f8">
+<yaxx:AdditiveExpr id="f6">
+<yaxx:MultiplicativeExpr id="f4">
+<yaxx:UnaryExpr id="f3">
+<yaxx:PostfixExpr id="f2">
+<yaxx:LeftHandSideExpr id="f0">
+<yaxx:CallExpr id="ee">
+<yaxx:MemberExpr id="66">
+<yaxx:MemberExpr id="63">
+<yaxx:PrimaryExpr id="62">
+<yaxx:IDENT id="60">date</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="64">.</yaxx:CHAR46>
+<yaxx:IDENT id="65">setTime</yaxx:IDENT>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="ed">
+<yaxx:CHAR40 id="67">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="eb">
+<yaxx:AssignmentExpr id="ea">
+<yaxx:ConditionalExpr id="e9">
+<yaxx:LogicalORExpr id="e7">
+<yaxx:LogicalANDExpr id="e5">
+<yaxx:BitwiseORExpr id="e3">
+<yaxx:BitwiseXORExpr id="e1">
+<yaxx:BitwiseANDExpr id="df">
+<yaxx:EqualityExpr id="dd">
+<yaxx:RelationalExpr id="db">
+<yaxx:ShiftExpr id="d9">
+<yaxx:AdditiveExpr id="d7">
+<yaxx:AdditiveExpr id="79">
+<yaxx:MultiplicativeExpr id="77">
+<yaxx:UnaryExpr id="76">
+<yaxx:PostfixExpr id="75">
+<yaxx:LeftHandSideExpr id="73">
+<yaxx:CallExpr id="71">
+<yaxx:MemberExpr id="6d">
+<yaxx:MemberExpr id="6a">
+<yaxx:PrimaryExpr id="69">
+<yaxx:IDENT id="68">date</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="6b">.</yaxx:CHAR46>
+<yaxx:IDENT id="6c">getTime</yaxx:IDENT>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="70">
+<yaxx:CHAR40 id="6e">(</yaxx:CHAR40>
+<yaxx:CHAR41 id="6f">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+<yaxx:CHAR43 id="7a">+</yaxx:CHAR43>
+<yaxx:MultiplicativeExpr id="d5">
+<yaxx:UnaryExpr id="d4">
+<yaxx:PostfixExpr id="d3">
+<yaxx:LeftHandSideExpr id="d1">
+<yaxx:NewExpr id="d0">
+<yaxx:MemberExpr id="ce">
+<yaxx:PrimaryExpr id="cd">
+<yaxx:CHAR40 id="7b">(</yaxx:CHAR40>
+<yaxx:Expr id="cb">
+<yaxx:AssignmentExpr id="ca">
+<yaxx:ConditionalExpr id="c9">
+<yaxx:LogicalORExpr id="c7">
+<yaxx:LogicalANDExpr id="c5">
+<yaxx:BitwiseORExpr id="c3">
+<yaxx:BitwiseXORExpr id="c1">
+<yaxx:BitwiseANDExpr id="bf">
+<yaxx:EqualityExpr id="bd">
+<yaxx:RelationalExpr id="bb">
+<yaxx:ShiftExpr id="b9">
+<yaxx:AdditiveExpr id="b7">
+<yaxx:MultiplicativeExpr id="b5">
+<yaxx:MultiplicativeExpr id="a9">
+<yaxx:MultiplicativeExpr id="9d">
+<yaxx:MultiplicativeExpr id="91">
+<yaxx:MultiplicativeExpr id="85">
+<yaxx:UnaryExpr id="84">
+<yaxx:PostfixExpr id="83">
+<yaxx:LeftHandSideExpr id="81">
+<yaxx:NewExpr id="80">
+<yaxx:MemberExpr id="7e">
+<yaxx:PrimaryExpr id="7d">
+<yaxx:IDENT id="7c">days</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+<yaxx:CHAR42 id="86">*</yaxx:CHAR42>
+<yaxx:UnaryExpr id="90">
+<yaxx:PostfixExpr id="8f">
+<yaxx:LeftHandSideExpr id="8d">
+<yaxx:NewExpr id="8c">
+<yaxx:MemberExpr id="8a">
+<yaxx:PrimaryExpr id="89">
+<yaxx:Literal id="88">
+<yaxx:NUMBER id="87">24</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+<yaxx:CHAR42 id="92">*</yaxx:CHAR42>
+<yaxx:UnaryExpr id="9c">
+<yaxx:PostfixExpr id="9b">
+<yaxx:LeftHandSideExpr id="99">
+<yaxx:NewExpr id="98">
+<yaxx:MemberExpr id="96">
+<yaxx:PrimaryExpr id="95">
+<yaxx:Literal id="94">
+<yaxx:NUMBER id="93">60</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+<yaxx:CHAR42 id="9e">*</yaxx:CHAR42>
+<yaxx:UnaryExpr id="a8">
+<yaxx:PostfixExpr id="a7">
+<yaxx:LeftHandSideExpr id="a5">
+<yaxx:NewExpr id="a4">
+<yaxx:MemberExpr id="a2">
+<yaxx:PrimaryExpr id="a1">
+<yaxx:Literal id="a0">
+<yaxx:NUMBER id="9f">60</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+<yaxx:CHAR42 id="aa">*</yaxx:CHAR42>
+<yaxx:UnaryExpr id="b4">
+<yaxx:PostfixExpr id="b3">
+<yaxx:LeftHandSideExpr id="b1">
+<yaxx:NewExpr id="b0">
+<yaxx:MemberExpr id="ae">
+<yaxx:PrimaryExpr id="ad">
+<yaxx:Literal id="ac">
+<yaxx:NUMBER id="ab">1000</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR41 id="cc">)</yaxx:CHAR41>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="ec">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="10b">;</yaxx:CHAR59>
+</yaxx:ExprStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="14c">
+<yaxx:Statement id="14b">
+<yaxx:VariableStatement id="14a">
+<yaxx:VAR id="110">var</yaxx:VAR>
+<yaxx:VariableDeclarationList id="148">
+<yaxx:VariableDeclaration id="147">
+<yaxx:IDENT id="111">expires</yaxx:IDENT>
+<yaxx:Initializer id="146">
+<yaxx:CHAR61 id="112">=</yaxx:CHAR61>
+<yaxx:AssignmentExpr id="145">
+<yaxx:ConditionalExpr id="144">
+<yaxx:LogicalORExpr id="142">
+<yaxx:LogicalANDExpr id="140">
+<yaxx:BitwiseORExpr id="13e">
+<yaxx:BitwiseXORExpr id="13c">
+<yaxx:BitwiseANDExpr id="13a">
+<yaxx:EqualityExpr id="138">
+<yaxx:RelationalExpr id="136">
+<yaxx:ShiftExpr id="134">
+<yaxx:AdditiveExpr id="132">
+<yaxx:AdditiveExpr id="11f">
+<yaxx:MultiplicativeExpr id="11d">
+<yaxx:UnaryExpr id="11c">
+<yaxx:PostfixExpr id="11b">
+<yaxx:LeftHandSideExpr id="119">
+<yaxx:NewExpr id="118">
+<yaxx:MemberExpr id="116">
+<yaxx:PrimaryExpr id="115">
+<yaxx:Literal id="114">
+<yaxx:STRING id="113">&quot;; expires=&quot;</yaxx:STRING>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+<yaxx:CHAR43 id="120">+</yaxx:CHAR43>
+<yaxx:MultiplicativeExpr id="130">
+<yaxx:UnaryExpr id="12f">
+<yaxx:PostfixExpr id="12e">
+<yaxx:LeftHandSideExpr id="12c">
+<yaxx:CallExpr id="12a">
+<yaxx:MemberExpr id="126">
+<yaxx:MemberExpr id="123">
+<yaxx:PrimaryExpr id="122">
+<yaxx:IDENT id="121">date</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="124">.</yaxx:CHAR46>
+<yaxx:IDENT id="125">toGMTString</yaxx:IDENT>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="129">
+<yaxx:CHAR40 id="127">(</yaxx:CHAR40>
+<yaxx:CHAR41 id="128">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Initializer>
+</yaxx:VariableDeclaration>
+</yaxx:VariableDeclarationList>
+<yaxx:CHAR59 id="149">;</yaxx:CHAR59>
+</yaxx:VariableStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:CHAR125 id="14e">}</yaxx:CHAR125>
+</yaxx:Block>
+</yaxx:Statement>
+<yaxx:ELSE id="151">else</yaxx:ELSE>
+<yaxx:Statement id="17a">
+<yaxx:VariableStatement id="179">
+<yaxx:VAR id="152">var</yaxx:VAR>
+<yaxx:VariableDeclarationList id="177">
+<yaxx:VariableDeclaration id="176">
+<yaxx:IDENT id="153">expires</yaxx:IDENT>
+<yaxx:Initializer id="175">
+<yaxx:CHAR61 id="154">=</yaxx:CHAR61>
+<yaxx:AssignmentExpr id="174">
+<yaxx:ConditionalExpr id="173">
+<yaxx:LogicalORExpr id="171">
+<yaxx:LogicalANDExpr id="16f">
+<yaxx:BitwiseORExpr id="16d">
+<yaxx:BitwiseXORExpr id="16b">
+<yaxx:BitwiseANDExpr id="169">
+<yaxx:EqualityExpr id="167">
+<yaxx:RelationalExpr id="165">
+<yaxx:ShiftExpr id="163">
+<yaxx:AdditiveExpr id="161">
+<yaxx:MultiplicativeExpr id="15f">
+<yaxx:UnaryExpr id="15e">
+<yaxx:PostfixExpr id="15d">
+<yaxx:LeftHandSideExpr id="15b">
+<yaxx:NewExpr id="15a">
+<yaxx:MemberExpr id="158">
+<yaxx:PrimaryExpr id="157">
+<yaxx:Literal id="156">
+<yaxx:STRING id="155">&quot;&quot;</yaxx:STRING>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Initializer>
+</yaxx:VariableDeclaration>
+</yaxx:VariableDeclarationList>
+<yaxx:CHAR59 id="178">;</yaxx:CHAR59>
+</yaxx:VariableStatement>
+</yaxx:Statement>
+</yaxx:IfStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="1e5">
+<yaxx:Statement id="1e4">
+<yaxx:ExprStatement id="1e3">
+<yaxx:Expr id="1e1">
+<yaxx:AssignmentExpr id="1e0">
+<yaxx:LeftHandSideExpr id="188">
+<yaxx:NewExpr id="187">
+<yaxx:MemberExpr id="185">
+<yaxx:MemberExpr id="182">
+<yaxx:PrimaryExpr id="181">
+<yaxx:IDENT id="17f">document</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="183">.</yaxx:CHAR46>
+<yaxx:IDENT id="184">cookie</yaxx:IDENT>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+<yaxx:AssignmentOperator id="18a">
+<yaxx:CHAR61 id="189">=</yaxx:CHAR61>
+</yaxx:AssignmentOperator>
+<yaxx:AssignmentExpr id="1df">
+<yaxx:ConditionalExpr id="1de">
+<yaxx:LogicalORExpr id="1dc">
+<yaxx:LogicalANDExpr id="1da">
+<yaxx:BitwiseORExpr id="1d8">
+<yaxx:BitwiseXORExpr id="1d6">
+<yaxx:BitwiseANDExpr id="1d4">
+<yaxx:EqualityExpr id="1d2">
+<yaxx:RelationalExpr id="1d0">
+<yaxx:ShiftExpr id="1ce">
+<yaxx:AdditiveExpr id="1cc">
+<yaxx:AdditiveExpr id="1be">
+<yaxx:AdditiveExpr id="1b1">
+<yaxx:AdditiveExpr id="1a4">
+<yaxx:AdditiveExpr id="196">
+<yaxx:MultiplicativeExpr id="194">
+<yaxx:UnaryExpr id="193">
+<yaxx:PostfixExpr id="192">
+<yaxx:LeftHandSideExpr id="190">
+<yaxx:NewExpr id="18f">
+<yaxx:MemberExpr id="18d">
+<yaxx:PrimaryExpr id="18c">
+<yaxx:IDENT id="18b">name</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+<yaxx:CHAR43 id="197">+</yaxx:CHAR43>
+<yaxx:MultiplicativeExpr id="1a2">
+<yaxx:UnaryExpr id="1a1">
+<yaxx:PostfixExpr id="1a0">
+<yaxx:LeftHandSideExpr id="19e">
+<yaxx:NewExpr id="19d">
+<yaxx:MemberExpr id="19b">
+<yaxx:PrimaryExpr id="19a">
+<yaxx:Literal id="199">
+<yaxx:STRING id="198">&quot;=&quot;</yaxx:STRING>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+<yaxx:CHAR43 id="1a5">+</yaxx:CHAR43>
+<yaxx:MultiplicativeExpr id="1af">
+<yaxx:UnaryExpr id="1ae">
+<yaxx:PostfixExpr id="1ad">
+<yaxx:LeftHandSideExpr id="1ab">
+<yaxx:NewExpr id="1aa">
+<yaxx:MemberExpr id="1a8">
+<yaxx:PrimaryExpr id="1a7">
+<yaxx:IDENT id="1a6">value</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+<yaxx:CHAR43 id="1b2">+</yaxx:CHAR43>
+<yaxx:MultiplicativeExpr id="1bc">
+<yaxx:UnaryExpr id="1bb">
+<yaxx:PostfixExpr id="1ba">
+<yaxx:LeftHandSideExpr id="1b8">
+<yaxx:NewExpr id="1b7">
+<yaxx:MemberExpr id="1b5">
+<yaxx:PrimaryExpr id="1b4">
+<yaxx:IDENT id="1b3">expires</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+<yaxx:CHAR43 id="1bf">+</yaxx:CHAR43>
+<yaxx:MultiplicativeExpr id="1ca">
+<yaxx:UnaryExpr id="1c9">
+<yaxx:PostfixExpr id="1c8">
+<yaxx:LeftHandSideExpr id="1c6">
+<yaxx:NewExpr id="1c5">
+<yaxx:MemberExpr id="1c3">
+<yaxx:PrimaryExpr id="1c2">
+<yaxx:Literal id="1c1">
+<yaxx:STRING id="1c0">&quot;; path=/&quot;</yaxx:STRING>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="1e2">;</yaxx:CHAR59>
+</yaxx:ExprStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:CHAR125 id="1e7">}</yaxx:CHAR125>
+</yaxx:FunctionBody>
+</yaxx:FunctionDeclaration>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="52e">
+<yaxx:FunctionDeclaration id="52d">
+<yaxx:FUNCTION id="1ec">function</yaxx:FUNCTION>
+<yaxx:IDENT id="1ed">readCookie</yaxx:IDENT>
+<yaxx:CHAR40 id="1ee">(</yaxx:CHAR40>
+<yaxx:FormalParameterList id="1f0">
+<yaxx:IDENT id="1ef">name</yaxx:IDENT>
+</yaxx:FormalParameterList>
+<yaxx:CHAR41 id="1f1">)</yaxx:CHAR41>
+<yaxx:FunctionBody id="52c">
+<yaxx:CHAR123 id="1f2">{</yaxx:CHAR123>
+<yaxx:SourceElements id="52a">
+<yaxx:SourceElements id="504">
+<yaxx:SourceElements id="27e">
+<yaxx:SourceElements id="22a">
+<yaxx:SourceElement id="229">
+<yaxx:Statement id="228">
+<yaxx:VariableStatement id="227">
+<yaxx:VAR id="1f3">var</yaxx:VAR>
+<yaxx:VariableDeclarationList id="225">
+<yaxx:VariableDeclaration id="224">
+<yaxx:IDENT id="1f4">nameEQ</yaxx:IDENT>
+<yaxx:Initializer id="223">
+<yaxx:CHAR61 id="1f5">=</yaxx:CHAR61>
+<yaxx:AssignmentExpr id="222">
+<yaxx:ConditionalExpr id="221">
+<yaxx:LogicalORExpr id="21f">
+<yaxx:LogicalANDExpr id="21d">
+<yaxx:BitwiseORExpr id="21b">
+<yaxx:BitwiseXORExpr id="219">
+<yaxx:BitwiseANDExpr id="217">
+<yaxx:EqualityExpr id="215">
+<yaxx:RelationalExpr id="213">
+<yaxx:ShiftExpr id="211">
+<yaxx:AdditiveExpr id="20f">
+<yaxx:AdditiveExpr id="201">
+<yaxx:MultiplicativeExpr id="1ff">
+<yaxx:UnaryExpr id="1fe">
+<yaxx:PostfixExpr id="1fd">
+<yaxx:LeftHandSideExpr id="1fb">
+<yaxx:NewExpr id="1fa">
+<yaxx:MemberExpr id="1f8">
+<yaxx:PrimaryExpr id="1f7">
+<yaxx:IDENT id="1f6">name</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+<yaxx:CHAR43 id="202">+</yaxx:CHAR43>
+<yaxx:MultiplicativeExpr id="20d">
+<yaxx:UnaryExpr id="20c">
+<yaxx:PostfixExpr id="20b">
+<yaxx:LeftHandSideExpr id="209">
+<yaxx:NewExpr id="208">
+<yaxx:MemberExpr id="206">
+<yaxx:PrimaryExpr id="205">
+<yaxx:Literal id="204">
+<yaxx:STRING id="203">&quot;=&quot;</yaxx:STRING>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Initializer>
+</yaxx:VariableDeclaration>
+</yaxx:VariableDeclarationList>
+<yaxx:CHAR59 id="226">;</yaxx:CHAR59>
+</yaxx:VariableStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="27d">
+<yaxx:Statement id="27c">
+<yaxx:VariableStatement id="27b">
+<yaxx:VAR id="22b">var</yaxx:VAR>
+<yaxx:VariableDeclarationList id="279">
+<yaxx:VariableDeclaration id="278">
+<yaxx:IDENT id="22c">ca</yaxx:IDENT>
+<yaxx:Initializer id="277">
+<yaxx:CHAR61 id="22d">=</yaxx:CHAR61>
+<yaxx:AssignmentExpr id="276">
+<yaxx:ConditionalExpr id="275">
+<yaxx:LogicalORExpr id="273">
+<yaxx:LogicalANDExpr id="271">
+<yaxx:BitwiseORExpr id="26f">
+<yaxx:BitwiseXORExpr id="26d">
+<yaxx:BitwiseANDExpr id="26b">
+<yaxx:EqualityExpr id="269">
+<yaxx:RelationalExpr id="267">
+<yaxx:ShiftExpr id="265">
+<yaxx:AdditiveExpr id="263">
+<yaxx:MultiplicativeExpr id="261">
+<yaxx:UnaryExpr id="260">
+<yaxx:PostfixExpr id="25f">
+<yaxx:LeftHandSideExpr id="25d">
+<yaxx:CallExpr id="25b">
+<yaxx:MemberExpr id="236">
+<yaxx:MemberExpr id="233">
+<yaxx:MemberExpr id="230">
+<yaxx:PrimaryExpr id="22f">
+<yaxx:IDENT id="22e">document</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="231">.</yaxx:CHAR46>
+<yaxx:IDENT id="232">cookie</yaxx:IDENT>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="234">.</yaxx:CHAR46>
+<yaxx:IDENT id="235">split</yaxx:IDENT>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="25a">
+<yaxx:CHAR40 id="237">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="258">
+<yaxx:AssignmentExpr id="257">
+<yaxx:ConditionalExpr id="256">
+<yaxx:LogicalORExpr id="254">
+<yaxx:LogicalANDExpr id="252">
+<yaxx:BitwiseORExpr id="250">
+<yaxx:BitwiseXORExpr id="24e">
+<yaxx:BitwiseANDExpr id="24c">
+<yaxx:EqualityExpr id="24a">
+<yaxx:RelationalExpr id="248">
+<yaxx:ShiftExpr id="246">
+<yaxx:AdditiveExpr id="244">
+<yaxx:MultiplicativeExpr id="242">
+<yaxx:UnaryExpr id="241">
+<yaxx:PostfixExpr id="240">
+<yaxx:LeftHandSideExpr id="23e">
+<yaxx:NewExpr id="23d">
+<yaxx:MemberExpr id="23b">
+<yaxx:PrimaryExpr id="23a">
+<yaxx:Literal id="239">
+<yaxx:NUMBER id="238">&apos;;&apos;</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="259">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Initializer>
+</yaxx:VariableDeclaration>
+</yaxx:VariableDeclarationList>
+<yaxx:CHAR59 id="27a">;</yaxx:CHAR59>
+</yaxx:VariableStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="503">
+<yaxx:Statement id="502">
+<yaxx:IterationStatement id="501">
+<yaxx:FOR id="27f">for</yaxx:FOR>
+<yaxx:CHAR40 id="280">(</yaxx:CHAR40>
+<yaxx:VAR id="281">var</yaxx:VAR>
+<yaxx:VariableDeclarationList id="2a7">
+<yaxx:VariableDeclaration id="2a6">
+<yaxx:IDENT id="282">i</yaxx:IDENT>
+<yaxx:Initializer id="2a4">
+<yaxx:CHAR61 id="283">=</yaxx:CHAR61>
+<yaxx:AssignmentExpr id="2a3">
+<yaxx:ConditionalExpr id="2a2">
+<yaxx:LogicalORExpr id="2a0">
+<yaxx:LogicalANDExpr id="29e">
+<yaxx:BitwiseORExpr id="29c">
+<yaxx:BitwiseXORExpr id="29a">
+<yaxx:BitwiseANDExpr id="298">
+<yaxx:EqualityExpr id="296">
+<yaxx:RelationalExpr id="294">
+<yaxx:ShiftExpr id="292">
+<yaxx:AdditiveExpr id="290">
+<yaxx:MultiplicativeExpr id="28e">
+<yaxx:UnaryExpr id="28d">
+<yaxx:PostfixExpr id="28c">
+<yaxx:LeftHandSideExpr id="28a">
+<yaxx:NewExpr id="289">
+<yaxx:MemberExpr id="287">
+<yaxx:PrimaryExpr id="286">
+<yaxx:Literal id="285">
+<yaxx:NUMBER id="284">0</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Initializer>
+</yaxx:VariableDeclaration>
+</yaxx:VariableDeclarationList>
+<yaxx:CHAR59 id="2a8">;</yaxx:CHAR59>
+<yaxx:ExprOpt id="2de">
+<yaxx:Expr id="2dc">
+<yaxx:AssignmentExpr id="2db">
+<yaxx:ConditionalExpr id="2da">
+<yaxx:LogicalORExpr id="2d8">
+<yaxx:LogicalANDExpr id="2d6">
+<yaxx:BitwiseORExpr id="2d4">
+<yaxx:BitwiseXORExpr id="2d2">
+<yaxx:BitwiseANDExpr id="2d0">
+<yaxx:EqualityExpr id="2ce">
+<yaxx:RelationalExpr id="2cc">
+<yaxx:RelationalExpr id="2b8">
+<yaxx:ShiftExpr id="2b6">
+<yaxx:AdditiveExpr id="2b4">
+<yaxx:MultiplicativeExpr id="2b2">
+<yaxx:UnaryExpr id="2b1">
+<yaxx:PostfixExpr id="2b0">
+<yaxx:LeftHandSideExpr id="2ae">
+<yaxx:NewExpr id="2ad">
+<yaxx:MemberExpr id="2ab">
+<yaxx:PrimaryExpr id="2aa">
+<yaxx:IDENT id="2a9">i</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+<yaxx:CHAR60 id="2b9">&lt;</yaxx:CHAR60>
+<yaxx:ShiftExpr id="2ca">
+<yaxx:AdditiveExpr id="2c8">
+<yaxx:MultiplicativeExpr id="2c6">
+<yaxx:UnaryExpr id="2c5">
+<yaxx:PostfixExpr id="2c4">
+<yaxx:LeftHandSideExpr id="2c2">
+<yaxx:NewExpr id="2c1">
+<yaxx:MemberExpr id="2bf">
+<yaxx:MemberExpr id="2bc">
+<yaxx:PrimaryExpr id="2bb">
+<yaxx:IDENT id="2ba">ca</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="2bd">.</yaxx:CHAR46>
+<yaxx:IDENT id="2be">length</yaxx:IDENT>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+</yaxx:ExprOpt>
+<yaxx:CHAR59 id="2df">;</yaxx:CHAR59>
+<yaxx:ExprOpt id="301">
+<yaxx:Expr id="2ff">
+<yaxx:AssignmentExpr id="2fe">
+<yaxx:ConditionalExpr id="2fd">
+<yaxx:LogicalORExpr id="2fb">
+<yaxx:LogicalANDExpr id="2f9">
+<yaxx:BitwiseORExpr id="2f7">
+<yaxx:BitwiseXORExpr id="2f5">
+<yaxx:BitwiseANDExpr id="2f3">
+<yaxx:EqualityExpr id="2f1">
+<yaxx:RelationalExpr id="2ef">
+<yaxx:ShiftExpr id="2ed">
+<yaxx:AdditiveExpr id="2eb">
+<yaxx:MultiplicativeExpr id="2e9">
+<yaxx:UnaryExpr id="2e8">
+<yaxx:PostfixExpr id="2e7">
+<yaxx:LeftHandSideExpr id="2e5">
+<yaxx:NewExpr id="2e4">
+<yaxx:MemberExpr id="2e2">
+<yaxx:PrimaryExpr id="2e1">
+<yaxx:IDENT id="2e0">i</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+<yaxx:PLUSPLUS id="2e6">++</yaxx:PLUSPLUS>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+</yaxx:ExprOpt>
+<yaxx:CHAR41 id="302">)</yaxx:CHAR41>
+<yaxx:Statement id="500">
+<yaxx:Block id="4ff">
+<yaxx:CHAR123 id="303">{</yaxx:CHAR123>
+<yaxx:SourceElements id="4fd">
+<yaxx:SourceElements id="42a">
+<yaxx:SourceElements id="350">
+<yaxx:SourceElement id="34f">
+<yaxx:Statement id="34e">
+<yaxx:VariableStatement id="34d">
+<yaxx:VAR id="304">var</yaxx:VAR>
+<yaxx:VariableDeclarationList id="34b">
+<yaxx:VariableDeclaration id="34a">
+<yaxx:IDENT id="305">c</yaxx:IDENT>
+<yaxx:Initializer id="349">
+<yaxx:CHAR61 id="306">=</yaxx:CHAR61>
+<yaxx:AssignmentExpr id="348">
+<yaxx:ConditionalExpr id="347">
+<yaxx:LogicalORExpr id="345">
+<yaxx:LogicalANDExpr id="343">
+<yaxx:BitwiseORExpr id="341">
+<yaxx:BitwiseXORExpr id="33f">
+<yaxx:BitwiseANDExpr id="33d">
+<yaxx:EqualityExpr id="33b">
+<yaxx:RelationalExpr id="339">
+<yaxx:ShiftExpr id="337">
+<yaxx:AdditiveExpr id="335">
+<yaxx:MultiplicativeExpr id="333">
+<yaxx:UnaryExpr id="332">
+<yaxx:PostfixExpr id="331">
+<yaxx:LeftHandSideExpr id="32f">
+<yaxx:NewExpr id="32e">
+<yaxx:MemberExpr id="32c">
+<yaxx:MemberExpr id="309">
+<yaxx:PrimaryExpr id="308">
+<yaxx:IDENT id="307">ca</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR91 id="30a">[</yaxx:CHAR91>
+<yaxx:Expr id="32a">
+<yaxx:AssignmentExpr id="329">
+<yaxx:ConditionalExpr id="328">
+<yaxx:LogicalORExpr id="326">
+<yaxx:LogicalANDExpr id="324">
+<yaxx:BitwiseORExpr id="322">
+<yaxx:BitwiseXORExpr id="320">
+<yaxx:BitwiseANDExpr id="31e">
+<yaxx:EqualityExpr id="31c">
+<yaxx:RelationalExpr id="31a">
+<yaxx:ShiftExpr id="318">
+<yaxx:AdditiveExpr id="316">
+<yaxx:MultiplicativeExpr id="314">
+<yaxx:UnaryExpr id="313">
+<yaxx:PostfixExpr id="312">
+<yaxx:LeftHandSideExpr id="310">
+<yaxx:NewExpr id="30f">
+<yaxx:MemberExpr id="30d">
+<yaxx:PrimaryExpr id="30c">
+<yaxx:IDENT id="30b">i</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR93 id="32b">]</yaxx:CHAR93>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Initializer>
+</yaxx:VariableDeclaration>
+</yaxx:VariableDeclarationList>
+<yaxx:CHAR59 id="34c">;</yaxx:CHAR59>
+</yaxx:VariableStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="429">
+<yaxx:Statement id="428">
+<yaxx:IterationStatement id="427">
+<yaxx:WHILE id="351">while</yaxx:WHILE>
+<yaxx:CHAR40 id="352">(</yaxx:CHAR40>
+<yaxx:Expr id="3ad">
+<yaxx:AssignmentExpr id="3ac">
+<yaxx:ConditionalExpr id="3ab">
+<yaxx:LogicalORExpr id="3a9">
+<yaxx:LogicalANDExpr id="3a7">
+<yaxx:BitwiseORExpr id="3a5">
+<yaxx:BitwiseXORExpr id="3a3">
+<yaxx:BitwiseANDExpr id="3a1">
+<yaxx:EqualityExpr id="39f">
+<yaxx:EqualityExpr id="38b">
+<yaxx:RelationalExpr id="389">
+<yaxx:ShiftExpr id="387">
+<yaxx:AdditiveExpr id="385">
+<yaxx:MultiplicativeExpr id="383">
+<yaxx:UnaryExpr id="382">
+<yaxx:PostfixExpr id="381">
+<yaxx:LeftHandSideExpr id="37f">
+<yaxx:CallExpr id="37d">
+<yaxx:MemberExpr id="358">
+<yaxx:MemberExpr id="355">
+<yaxx:PrimaryExpr id="354">
+<yaxx:IDENT id="353">c</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="356">.</yaxx:CHAR46>
+<yaxx:IDENT id="357">charAt</yaxx:IDENT>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="37c">
+<yaxx:CHAR40 id="359">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="37a">
+<yaxx:AssignmentExpr id="379">
+<yaxx:ConditionalExpr id="378">
+<yaxx:LogicalORExpr id="376">
+<yaxx:LogicalANDExpr id="374">
+<yaxx:BitwiseORExpr id="372">
+<yaxx:BitwiseXORExpr id="370">
+<yaxx:BitwiseANDExpr id="36e">
+<yaxx:EqualityExpr id="36c">
+<yaxx:RelationalExpr id="36a">
+<yaxx:ShiftExpr id="368">
+<yaxx:AdditiveExpr id="366">
+<yaxx:MultiplicativeExpr id="364">
+<yaxx:UnaryExpr id="363">
+<yaxx:PostfixExpr id="362">
+<yaxx:LeftHandSideExpr id="360">
+<yaxx:NewExpr id="35f">
+<yaxx:MemberExpr id="35d">
+<yaxx:PrimaryExpr id="35c">
+<yaxx:Literal id="35b">
+<yaxx:NUMBER id="35a">0</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="37b">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+<yaxx:EQEQ id="38c">==</yaxx:EQEQ>
+<yaxx:RelationalExpr id="39d">
+<yaxx:ShiftExpr id="39b">
+<yaxx:AdditiveExpr id="399">
+<yaxx:MultiplicativeExpr id="397">
+<yaxx:UnaryExpr id="396">
+<yaxx:PostfixExpr id="395">
+<yaxx:LeftHandSideExpr id="393">
+<yaxx:NewExpr id="392">
+<yaxx:MemberExpr id="390">
+<yaxx:PrimaryExpr id="38f">
+<yaxx:Literal id="38e">
+<yaxx:NUMBER id="38d">&apos; &apos;</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR41 id="3ae">)</yaxx:CHAR41>
+<yaxx:Statement id="426">
+<yaxx:ExprStatement id="425">
+<yaxx:Expr id="423">
+<yaxx:AssignmentExpr id="422">
+<yaxx:LeftHandSideExpr id="3b5">
+<yaxx:NewExpr id="3b4">
+<yaxx:MemberExpr id="3b2">
+<yaxx:PrimaryExpr id="3b1">
+<yaxx:IDENT id="3af">c</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+<yaxx:AssignmentOperator id="3b7">
+<yaxx:CHAR61 id="3b6">=</yaxx:CHAR61>
+</yaxx:AssignmentOperator>
+<yaxx:AssignmentExpr id="421">
+<yaxx:ConditionalExpr id="420">
+<yaxx:LogicalORExpr id="41e">
+<yaxx:LogicalANDExpr id="41c">
+<yaxx:BitwiseORExpr id="41a">
+<yaxx:BitwiseXORExpr id="418">
+<yaxx:BitwiseANDExpr id="416">
+<yaxx:EqualityExpr id="414">
+<yaxx:RelationalExpr id="412">
+<yaxx:ShiftExpr id="410">
+<yaxx:AdditiveExpr id="40e">
+<yaxx:MultiplicativeExpr id="40c">
+<yaxx:UnaryExpr id="40b">
+<yaxx:PostfixExpr id="40a">
+<yaxx:LeftHandSideExpr id="408">
+<yaxx:CallExpr id="406">
+<yaxx:MemberExpr id="3bd">
+<yaxx:MemberExpr id="3ba">
+<yaxx:PrimaryExpr id="3b9">
+<yaxx:IDENT id="3b8">c</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="3bb">.</yaxx:CHAR46>
+<yaxx:IDENT id="3bc">substring</yaxx:IDENT>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="405">
+<yaxx:CHAR40 id="3be">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="403">
+<yaxx:ArgumentList id="3df">
+<yaxx:AssignmentExpr id="3de">
+<yaxx:ConditionalExpr id="3dd">
+<yaxx:LogicalORExpr id="3db">
+<yaxx:LogicalANDExpr id="3d9">
+<yaxx:BitwiseORExpr id="3d7">
+<yaxx:BitwiseXORExpr id="3d5">
+<yaxx:BitwiseANDExpr id="3d3">
+<yaxx:EqualityExpr id="3d1">
+<yaxx:RelationalExpr id="3cf">
+<yaxx:ShiftExpr id="3cd">
+<yaxx:AdditiveExpr id="3cb">
+<yaxx:MultiplicativeExpr id="3c9">
+<yaxx:UnaryExpr id="3c8">
+<yaxx:PostfixExpr id="3c7">
+<yaxx:LeftHandSideExpr id="3c5">
+<yaxx:NewExpr id="3c4">
+<yaxx:MemberExpr id="3c2">
+<yaxx:PrimaryExpr id="3c1">
+<yaxx:Literal id="3c0">
+<yaxx:NUMBER id="3bf">1</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR44 id="3e0">,</yaxx:CHAR44>
+<yaxx:AssignmentExpr id="402">
+<yaxx:ConditionalExpr id="401">
+<yaxx:LogicalORExpr id="3ff">
+<yaxx:LogicalANDExpr id="3fd">
+<yaxx:BitwiseORExpr id="3fb">
+<yaxx:BitwiseXORExpr id="3f9">
+<yaxx:BitwiseANDExpr id="3f7">
+<yaxx:EqualityExpr id="3f5">
+<yaxx:RelationalExpr id="3f3">
+<yaxx:ShiftExpr id="3f1">
+<yaxx:AdditiveExpr id="3ef">
+<yaxx:MultiplicativeExpr id="3ed">
+<yaxx:UnaryExpr id="3ec">
+<yaxx:PostfixExpr id="3eb">
+<yaxx:LeftHandSideExpr id="3e9">
+<yaxx:NewExpr id="3e8">
+<yaxx:MemberExpr id="3e6">
+<yaxx:MemberExpr id="3e3">
+<yaxx:PrimaryExpr id="3e2">
+<yaxx:IDENT id="3e1">c</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="3e4">.</yaxx:CHAR46>
+<yaxx:IDENT id="3e5">length</yaxx:IDENT>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="404">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="424">;</yaxx:CHAR59>
+</yaxx:ExprStatement>
+</yaxx:Statement>
+</yaxx:IterationStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="4fc">
+<yaxx:Statement id="4fb">
+<yaxx:IfStatement id="4fa">
+<yaxx:IF id="42b">if</yaxx:IF>
+<yaxx:CHAR40 id="42c">(</yaxx:CHAR40>
+<yaxx:Expr id="486">
+<yaxx:AssignmentExpr id="485">
+<yaxx:ConditionalExpr id="484">
+<yaxx:LogicalORExpr id="482">
+<yaxx:LogicalANDExpr id="480">
+<yaxx:BitwiseORExpr id="47e">
+<yaxx:BitwiseXORExpr id="47c">
+<yaxx:BitwiseANDExpr id="47a">
+<yaxx:EqualityExpr id="478">
+<yaxx:EqualityExpr id="464">
+<yaxx:RelationalExpr id="462">
+<yaxx:ShiftExpr id="460">
+<yaxx:AdditiveExpr id="45e">
+<yaxx:MultiplicativeExpr id="45c">
+<yaxx:UnaryExpr id="45b">
+<yaxx:PostfixExpr id="45a">
+<yaxx:LeftHandSideExpr id="458">
+<yaxx:CallExpr id="456">
+<yaxx:MemberExpr id="432">
+<yaxx:MemberExpr id="42f">
+<yaxx:PrimaryExpr id="42e">
+<yaxx:IDENT id="42d">c</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="430">.</yaxx:CHAR46>
+<yaxx:IDENT id="431">indexOf</yaxx:IDENT>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="455">
+<yaxx:CHAR40 id="433">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="453">
+<yaxx:AssignmentExpr id="452">
+<yaxx:ConditionalExpr id="451">
+<yaxx:LogicalORExpr id="44f">
+<yaxx:LogicalANDExpr id="44d">
+<yaxx:BitwiseORExpr id="44b">
+<yaxx:BitwiseXORExpr id="449">
+<yaxx:BitwiseANDExpr id="447">
+<yaxx:EqualityExpr id="445">
+<yaxx:RelationalExpr id="443">
+<yaxx:ShiftExpr id="441">
+<yaxx:AdditiveExpr id="43f">
+<yaxx:MultiplicativeExpr id="43d">
+<yaxx:UnaryExpr id="43c">
+<yaxx:PostfixExpr id="43b">
+<yaxx:LeftHandSideExpr id="439">
+<yaxx:NewExpr id="438">
+<yaxx:MemberExpr id="436">
+<yaxx:PrimaryExpr id="435">
+<yaxx:IDENT id="434">nameEQ</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="454">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+<yaxx:EQEQ id="465">==</yaxx:EQEQ>
+<yaxx:RelationalExpr id="476">
+<yaxx:ShiftExpr id="474">
+<yaxx:AdditiveExpr id="472">
+<yaxx:MultiplicativeExpr id="470">
+<yaxx:UnaryExpr id="46f">
+<yaxx:PostfixExpr id="46e">
+<yaxx:LeftHandSideExpr id="46c">
+<yaxx:NewExpr id="46b">
+<yaxx:MemberExpr id="469">
+<yaxx:PrimaryExpr id="468">
+<yaxx:Literal id="467">
+<yaxx:NUMBER id="466">0</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR41 id="487">)</yaxx:CHAR41>
+<yaxx:Statement id="4f8">
+<yaxx:ReturnStatement id="4f7">
+<yaxx:RETURN id="488">return</yaxx:RETURN>
+<yaxx:Expr id="4f5">
+<yaxx:AssignmentExpr id="4f4">
+<yaxx:ConditionalExpr id="4f3">
+<yaxx:LogicalORExpr id="4f1">
+<yaxx:LogicalANDExpr id="4ef">
+<yaxx:BitwiseORExpr id="4ed">
+<yaxx:BitwiseXORExpr id="4eb">
+<yaxx:BitwiseANDExpr id="4e9">
+<yaxx:EqualityExpr id="4e7">
+<yaxx:RelationalExpr id="4e5">
+<yaxx:ShiftExpr id="4e3">
+<yaxx:AdditiveExpr id="4e1">
+<yaxx:MultiplicativeExpr id="4df">
+<yaxx:UnaryExpr id="4de">
+<yaxx:PostfixExpr id="4dd">
+<yaxx:LeftHandSideExpr id="4db">
+<yaxx:CallExpr id="4d9">
+<yaxx:MemberExpr id="48e">
+<yaxx:MemberExpr id="48b">
+<yaxx:PrimaryExpr id="48a">
+<yaxx:IDENT id="489">c</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="48c">.</yaxx:CHAR46>
+<yaxx:IDENT id="48d">substring</yaxx:IDENT>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="4d8">
+<yaxx:CHAR40 id="48f">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="4d6">
+<yaxx:ArgumentList id="4b2">
+<yaxx:AssignmentExpr id="4b1">
+<yaxx:ConditionalExpr id="4b0">
+<yaxx:LogicalORExpr id="4ae">
+<yaxx:LogicalANDExpr id="4ac">
+<yaxx:BitwiseORExpr id="4aa">
+<yaxx:BitwiseXORExpr id="4a8">
+<yaxx:BitwiseANDExpr id="4a6">
+<yaxx:EqualityExpr id="4a4">
+<yaxx:RelationalExpr id="4a2">
+<yaxx:ShiftExpr id="4a0">
+<yaxx:AdditiveExpr id="49e">
+<yaxx:MultiplicativeExpr id="49c">
+<yaxx:UnaryExpr id="49b">
+<yaxx:PostfixExpr id="49a">
+<yaxx:LeftHandSideExpr id="498">
+<yaxx:NewExpr id="497">
+<yaxx:MemberExpr id="495">
+<yaxx:MemberExpr id="492">
+<yaxx:PrimaryExpr id="491">
+<yaxx:IDENT id="490">nameEQ</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="493">.</yaxx:CHAR46>
+<yaxx:IDENT id="494">length</yaxx:IDENT>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR44 id="4b3">,</yaxx:CHAR44>
+<yaxx:AssignmentExpr id="4d5">
+<yaxx:ConditionalExpr id="4d4">
+<yaxx:LogicalORExpr id="4d2">
+<yaxx:LogicalANDExpr id="4d0">
+<yaxx:BitwiseORExpr id="4ce">
+<yaxx:BitwiseXORExpr id="4cc">
+<yaxx:BitwiseANDExpr id="4ca">
+<yaxx:EqualityExpr id="4c8">
+<yaxx:RelationalExpr id="4c6">
+<yaxx:ShiftExpr id="4c4">
+<yaxx:AdditiveExpr id="4c2">
+<yaxx:MultiplicativeExpr id="4c0">
+<yaxx:UnaryExpr id="4bf">
+<yaxx:PostfixExpr id="4be">
+<yaxx:LeftHandSideExpr id="4bc">
+<yaxx:NewExpr id="4bb">
+<yaxx:MemberExpr id="4b9">
+<yaxx:MemberExpr id="4b6">
+<yaxx:PrimaryExpr id="4b5">
+<yaxx:IDENT id="4b4">c</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="4b7">.</yaxx:CHAR46>
+<yaxx:IDENT id="4b8">length</yaxx:IDENT>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="4d7">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="4f6">;</yaxx:CHAR59>
+</yaxx:ReturnStatement>
+</yaxx:Statement>
+</yaxx:IfStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:CHAR125 id="4fe">}</yaxx:CHAR125>
+</yaxx:Block>
+</yaxx:Statement>
+</yaxx:IterationStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="529">
+<yaxx:Statement id="528">
+<yaxx:ReturnStatement id="527">
+<yaxx:RETURN id="505">return</yaxx:RETURN>
+<yaxx:Expr id="525">
+<yaxx:AssignmentExpr id="524">
+<yaxx:ConditionalExpr id="523">
+<yaxx:LogicalORExpr id="521">
+<yaxx:LogicalANDExpr id="51f">
+<yaxx:BitwiseORExpr id="51d">
+<yaxx:BitwiseXORExpr id="51b">
+<yaxx:BitwiseANDExpr id="519">
+<yaxx:EqualityExpr id="517">
+<yaxx:RelationalExpr id="515">
+<yaxx:ShiftExpr id="513">
+<yaxx:AdditiveExpr id="511">
+<yaxx:MultiplicativeExpr id="50f">
+<yaxx:UnaryExpr id="50e">
+<yaxx:PostfixExpr id="50d">
+<yaxx:LeftHandSideExpr id="50b">
+<yaxx:NewExpr id="50a">
+<yaxx:MemberExpr id="508">
+<yaxx:PrimaryExpr id="507">
+<yaxx:IDENT id="506">null</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="526">;</yaxx:CHAR59>
+</yaxx:ReturnStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:CHAR125 id="52b">}</yaxx:CHAR125>
+</yaxx:FunctionBody>
+</yaxx:FunctionDeclaration>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="5c9">
+<yaxx:FunctionDeclaration id="5c8">
+<yaxx:FUNCTION id="530">function</yaxx:FUNCTION>
+<yaxx:IDENT id="531">eraseCookie</yaxx:IDENT>
+<yaxx:CHAR40 id="532">(</yaxx:CHAR40>
+<yaxx:FormalParameterList id="534">
+<yaxx:IDENT id="533">name</yaxx:IDENT>
+</yaxx:FormalParameterList>
+<yaxx:CHAR41 id="535">)</yaxx:CHAR41>
+<yaxx:FunctionBody id="5c7">
+<yaxx:CHAR123 id="536">{</yaxx:CHAR123>
+<yaxx:SourceElements id="5c5">
+<yaxx:SourceElement id="5c4">
+<yaxx:Statement id="5c3">
+<yaxx:ExprStatement id="5c2">
+<yaxx:Expr id="5c0">
+<yaxx:AssignmentExpr id="5bf">
+<yaxx:ConditionalExpr id="5be">
+<yaxx:LogicalORExpr id="5bc">
+<yaxx:LogicalANDExpr id="5ba">
+<yaxx:BitwiseORExpr id="5b8">
+<yaxx:BitwiseXORExpr id="5b6">
+<yaxx:BitwiseANDExpr id="5b4">
+<yaxx:EqualityExpr id="5b2">
+<yaxx:RelationalExpr id="5b0">
+<yaxx:ShiftExpr id="5ae">
+<yaxx:AdditiveExpr id="5ac">
+<yaxx:MultiplicativeExpr id="5aa">
+<yaxx:UnaryExpr id="5a9">
+<yaxx:PostfixExpr id="5a8">
+<yaxx:LeftHandSideExpr id="5a6">
+<yaxx:CallExpr id="5a4">
+<yaxx:MemberExpr id="53a">
+<yaxx:PrimaryExpr id="539">
+<yaxx:IDENT id="537">createCookie</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="5a3">
+<yaxx:CHAR40 id="53b">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="5a1">
+<yaxx:ArgumentList id="57d">
+<yaxx:ArgumentList id="55b">
+<yaxx:AssignmentExpr id="55a">
+<yaxx:ConditionalExpr id="559">
+<yaxx:LogicalORExpr id="557">
+<yaxx:LogicalANDExpr id="555">
+<yaxx:BitwiseORExpr id="553">
+<yaxx:BitwiseXORExpr id="551">
+<yaxx:BitwiseANDExpr id="54f">
+<yaxx:EqualityExpr id="54d">
+<yaxx:RelationalExpr id="54b">
+<yaxx:ShiftExpr id="549">
+<yaxx:AdditiveExpr id="547">
+<yaxx:MultiplicativeExpr id="545">
+<yaxx:UnaryExpr id="544">
+<yaxx:PostfixExpr id="543">
+<yaxx:LeftHandSideExpr id="541">
+<yaxx:NewExpr id="540">
+<yaxx:MemberExpr id="53e">
+<yaxx:PrimaryExpr id="53d">
+<yaxx:IDENT id="53c">name</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR44 id="55c">,</yaxx:CHAR44>
+<yaxx:AssignmentExpr id="57c">
+<yaxx:ConditionalExpr id="57b">
+<yaxx:LogicalORExpr id="579">
+<yaxx:LogicalANDExpr id="577">
+<yaxx:BitwiseORExpr id="575">
+<yaxx:BitwiseXORExpr id="573">
+<yaxx:BitwiseANDExpr id="571">
+<yaxx:EqualityExpr id="56f">
+<yaxx:RelationalExpr id="56d">
+<yaxx:ShiftExpr id="56b">
+<yaxx:AdditiveExpr id="569">
+<yaxx:MultiplicativeExpr id="567">
+<yaxx:UnaryExpr id="566">
+<yaxx:PostfixExpr id="565">
+<yaxx:LeftHandSideExpr id="563">
+<yaxx:NewExpr id="562">
+<yaxx:MemberExpr id="560">
+<yaxx:PrimaryExpr id="55f">
+<yaxx:Literal id="55e">
+<yaxx:STRING id="55d">&quot;&quot;</yaxx:STRING>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR44 id="57e">,</yaxx:CHAR44>
+<yaxx:AssignmentExpr id="5a0">
+<yaxx:ConditionalExpr id="59f">
+<yaxx:LogicalORExpr id="59d">
+<yaxx:LogicalANDExpr id="59b">
+<yaxx:BitwiseORExpr id="599">
+<yaxx:BitwiseXORExpr id="597">
+<yaxx:BitwiseANDExpr id="595">
+<yaxx:EqualityExpr id="593">
+<yaxx:RelationalExpr id="591">
+<yaxx:ShiftExpr id="58f">
+<yaxx:AdditiveExpr id="58d">
+<yaxx:MultiplicativeExpr id="58b">
+<yaxx:UnaryExpr id="58a">
+<yaxx:CHAR45 id="57f">-</yaxx:CHAR45>
+<yaxx:UnaryExpr id="589">
+<yaxx:PostfixExpr id="588">
+<yaxx:LeftHandSideExpr id="586">
+<yaxx:NewExpr id="585">
+<yaxx:MemberExpr id="583">
+<yaxx:PrimaryExpr id="582">
+<yaxx:Literal id="581">
+<yaxx:NUMBER id="580">1</yaxx:NUMBER>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="5a2">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="5c1">;</yaxx:CHAR59>
+</yaxx:ExprStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:CHAR125 id="5c6">}</yaxx:CHAR125>
+</yaxx:FunctionBody>
+</yaxx:FunctionDeclaration>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="5fb">
+<yaxx:Statement id="5fa">
+<yaxx:ExprStatement id="5f9">
+<yaxx:Expr id="5f7">
+<yaxx:AssignmentExpr id="5f6">
+<yaxx:LeftHandSideExpr id="5d1">
+<yaxx:NewExpr id="5d0">
+<yaxx:MemberExpr id="5ce">
+<yaxx:PrimaryExpr id="5cd">
+<yaxx:IDENT id="5cb">cookie</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+<yaxx:AssignmentOperator id="5d3">
+<yaxx:CHAR61 id="5d2">=</yaxx:CHAR61>
+</yaxx:AssignmentOperator>
+<yaxx:AssignmentExpr id="5f5">
+<yaxx:ConditionalExpr id="5f4">
+<yaxx:LogicalORExpr id="5f2">
+<yaxx:LogicalANDExpr id="5f0">
+<yaxx:BitwiseORExpr id="5ee">
+<yaxx:BitwiseXORExpr id="5ec">
+<yaxx:BitwiseANDExpr id="5ea">
+<yaxx:EqualityExpr id="5e8">
+<yaxx:RelationalExpr id="5e6">
+<yaxx:ShiftExpr id="5e4">
+<yaxx:AdditiveExpr id="5e2">
+<yaxx:MultiplicativeExpr id="5e0">
+<yaxx:UnaryExpr id="5df">
+<yaxx:PostfixExpr id="5de">
+<yaxx:LeftHandSideExpr id="5dc">
+<yaxx:NewExpr id="5db">
+<yaxx:MemberExpr id="5d9">
+<yaxx:MemberExpr id="5d6">
+<yaxx:PrimaryExpr id="5d5">
+<yaxx:IDENT id="5d4">document</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="5d7">.</yaxx:CHAR46>
+<yaxx:IDENT id="5d8">cookie</yaxx:IDENT>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="5f8">;</yaxx:CHAR59>
+</yaxx:ExprStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="645">
+<yaxx:Statement id="644">
+<yaxx:ExprStatement id="643">
+<yaxx:Expr id="641">
+<yaxx:AssignmentExpr id="640">
+<yaxx:ConditionalExpr id="63f">
+<yaxx:LogicalORExpr id="63d">
+<yaxx:LogicalANDExpr id="63b">
+<yaxx:BitwiseORExpr id="639">
+<yaxx:BitwiseXORExpr id="637">
+<yaxx:BitwiseANDExpr id="635">
+<yaxx:EqualityExpr id="633">
+<yaxx:RelationalExpr id="631">
+<yaxx:ShiftExpr id="62f">
+<yaxx:AdditiveExpr id="62d">
+<yaxx:MultiplicativeExpr id="62b">
+<yaxx:UnaryExpr id="62a">
+<yaxx:PostfixExpr id="629">
+<yaxx:LeftHandSideExpr id="627">
+<yaxx:CallExpr id="625">
+<yaxx:MemberExpr id="600">
+<yaxx:PrimaryExpr id="5ff">
+<yaxx:IDENT id="5fd">alert</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="624">
+<yaxx:CHAR40 id="601">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="622">
+<yaxx:AssignmentExpr id="621">
+<yaxx:ConditionalExpr id="620">
+<yaxx:LogicalORExpr id="61e">
+<yaxx:LogicalANDExpr id="61c">
+<yaxx:BitwiseORExpr id="61a">
+<yaxx:BitwiseXORExpr id="618">
+<yaxx:BitwiseANDExpr id="616">
+<yaxx:EqualityExpr id="614">
+<yaxx:RelationalExpr id="612">
+<yaxx:ShiftExpr id="610">
+<yaxx:AdditiveExpr id="60e">
+<yaxx:MultiplicativeExpr id="60c">
+<yaxx:UnaryExpr id="60b">
+<yaxx:PostfixExpr id="60a">
+<yaxx:LeftHandSideExpr id="608">
+<yaxx:NewExpr id="607">
+<yaxx:MemberExpr id="605">
+<yaxx:PrimaryExpr id="604">
+<yaxx:Literal id="603">
+<yaxx:STRING id="602">&quot;foo&quot;</yaxx:STRING>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="623">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="642">;</yaxx:CHAR59>
+</yaxx:ExprStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="68e">
+<yaxx:Statement id="68d">
+<yaxx:ExprStatement id="68c">
+<yaxx:Expr id="68a">
+<yaxx:AssignmentExpr id="689">
+<yaxx:ConditionalExpr id="688">
+<yaxx:LogicalORExpr id="686">
+<yaxx:LogicalANDExpr id="684">
+<yaxx:BitwiseORExpr id="682">
+<yaxx:BitwiseXORExpr id="680">
+<yaxx:BitwiseANDExpr id="67e">
+<yaxx:EqualityExpr id="67c">
+<yaxx:RelationalExpr id="67a">
+<yaxx:ShiftExpr id="678">
+<yaxx:AdditiveExpr id="676">
+<yaxx:MultiplicativeExpr id="674">
+<yaxx:UnaryExpr id="673">
+<yaxx:PostfixExpr id="672">
+<yaxx:LeftHandSideExpr id="670">
+<yaxx:CallExpr id="66e">
+<yaxx:MemberExpr id="64a">
+<yaxx:PrimaryExpr id="649">
+<yaxx:IDENT id="647">alert</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="66d">
+<yaxx:CHAR40 id="64b">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="66b">
+<yaxx:AssignmentExpr id="66a">
+<yaxx:ConditionalExpr id="669">
+<yaxx:LogicalORExpr id="667">
+<yaxx:LogicalANDExpr id="665">
+<yaxx:BitwiseORExpr id="663">
+<yaxx:BitwiseXORExpr id="661">
+<yaxx:BitwiseANDExpr id="65f">
+<yaxx:EqualityExpr id="65d">
+<yaxx:RelationalExpr id="65b">
+<yaxx:ShiftExpr id="659">
+<yaxx:AdditiveExpr id="657">
+<yaxx:MultiplicativeExpr id="655">
+<yaxx:UnaryExpr id="654">
+<yaxx:PostfixExpr id="653">
+<yaxx:LeftHandSideExpr id="651">
+<yaxx:NewExpr id="650">
+<yaxx:MemberExpr id="64e">
+<yaxx:PrimaryExpr id="64d">
+<yaxx:IDENT id="64c">cookie</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="66c">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="68b">;</yaxx:CHAR59>
+</yaxx:ExprStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="6da">
+<yaxx:Statement id="6d9">
+<yaxx:ExprStatement id="6d8">
+<yaxx:Expr id="6d6">
+<yaxx:AssignmentExpr id="6d5">
+<yaxx:ConditionalExpr id="6d4">
+<yaxx:LogicalORExpr id="6d2">
+<yaxx:LogicalANDExpr id="6d0">
+<yaxx:BitwiseORExpr id="6ce">
+<yaxx:BitwiseXORExpr id="6cc">
+<yaxx:BitwiseANDExpr id="6ca">
+<yaxx:EqualityExpr id="6c8">
+<yaxx:RelationalExpr id="6c6">
+<yaxx:ShiftExpr id="6c4">
+<yaxx:AdditiveExpr id="6c2">
+<yaxx:MultiplicativeExpr id="6c0">
+<yaxx:UnaryExpr id="6bf">
+<yaxx:PostfixExpr id="6be">
+<yaxx:LeftHandSideExpr id="6bc">
+<yaxx:CallExpr id="6ba">
+<yaxx:MemberExpr id="693">
+<yaxx:PrimaryExpr id="692">
+<yaxx:IDENT id="690">alert</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="6b9">
+<yaxx:CHAR40 id="694">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="6b7">
+<yaxx:AssignmentExpr id="6b6">
+<yaxx:ConditionalExpr id="6b5">
+<yaxx:LogicalORExpr id="6b3">
+<yaxx:LogicalANDExpr id="6b1">
+<yaxx:BitwiseORExpr id="6af">
+<yaxx:BitwiseXORExpr id="6ad">
+<yaxx:BitwiseANDExpr id="6ab">
+<yaxx:EqualityExpr id="6a9">
+<yaxx:RelationalExpr id="6a7">
+<yaxx:ShiftExpr id="6a5">
+<yaxx:AdditiveExpr id="6a3">
+<yaxx:MultiplicativeExpr id="6a1">
+<yaxx:UnaryExpr id="6a0">
+<yaxx:PostfixExpr id="69f">
+<yaxx:LeftHandSideExpr id="69d">
+<yaxx:NewExpr id="69c">
+<yaxx:MemberExpr id="69a">
+<yaxx:MemberExpr id="697">
+<yaxx:PrimaryExpr id="696">
+<yaxx:IDENT id="695">document</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:CHAR46 id="698">.</yaxx:CHAR46>
+<yaxx:IDENT id="699">cookie</yaxx:IDENT>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="6b8">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="6d7">;</yaxx:CHAR59>
+</yaxx:ExprStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+<yaxx:SourceElement id="724">
+<yaxx:Statement id="723">
+<yaxx:ExprStatement id="722">
+<yaxx:Expr id="720">
+<yaxx:AssignmentExpr id="71f">
+<yaxx:ConditionalExpr id="71e">
+<yaxx:LogicalORExpr id="71c">
+<yaxx:LogicalANDExpr id="71a">
+<yaxx:BitwiseORExpr id="718">
+<yaxx:BitwiseXORExpr id="716">
+<yaxx:BitwiseANDExpr id="714">
+<yaxx:EqualityExpr id="712">
+<yaxx:RelationalExpr id="710">
+<yaxx:ShiftExpr id="70e">
+<yaxx:AdditiveExpr id="70c">
+<yaxx:MultiplicativeExpr id="70a">
+<yaxx:UnaryExpr id="709">
+<yaxx:PostfixExpr id="708">
+<yaxx:LeftHandSideExpr id="706">
+<yaxx:CallExpr id="704">
+<yaxx:MemberExpr id="6df">
+<yaxx:PrimaryExpr id="6de">
+<yaxx:IDENT id="6dc">alert</yaxx:IDENT>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+<yaxx:Arguments id="703">
+<yaxx:CHAR40 id="6e0">(</yaxx:CHAR40>
+<yaxx:ArgumentList id="701">
+<yaxx:AssignmentExpr id="700">
+<yaxx:ConditionalExpr id="6ff">
+<yaxx:LogicalORExpr id="6fd">
+<yaxx:LogicalANDExpr id="6fb">
+<yaxx:BitwiseORExpr id="6f9">
+<yaxx:BitwiseXORExpr id="6f7">
+<yaxx:BitwiseANDExpr id="6f5">
+<yaxx:EqualityExpr id="6f3">
+<yaxx:RelationalExpr id="6f1">
+<yaxx:ShiftExpr id="6ef">
+<yaxx:AdditiveExpr id="6ed">
+<yaxx:MultiplicativeExpr id="6eb">
+<yaxx:UnaryExpr id="6ea">
+<yaxx:PostfixExpr id="6e9">
+<yaxx:LeftHandSideExpr id="6e7">
+<yaxx:NewExpr id="6e6">
+<yaxx:MemberExpr id="6e4">
+<yaxx:PrimaryExpr id="6e3">
+<yaxx:Literal id="6e2">
+<yaxx:STRING id="6e1">&quot;bar&quot;</yaxx:STRING>
+</yaxx:Literal>
+</yaxx:PrimaryExpr>
+</yaxx:MemberExpr>
+</yaxx:NewExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:ArgumentList>
+<yaxx:CHAR41 id="702">)</yaxx:CHAR41>
+</yaxx:Arguments>
+</yaxx:CallExpr>
+</yaxx:LeftHandSideExpr>
+</yaxx:PostfixExpr>
+</yaxx:UnaryExpr>
+</yaxx:MultiplicativeExpr>
+</yaxx:AdditiveExpr>
+</yaxx:ShiftExpr>
+</yaxx:RelationalExpr>
+</yaxx:EqualityExpr>
+</yaxx:BitwiseANDExpr>
+</yaxx:BitwiseXORExpr>
+</yaxx:BitwiseORExpr>
+</yaxx:LogicalANDExpr>
+</yaxx:LogicalORExpr>
+</yaxx:ConditionalExpr>
+</yaxx:AssignmentExpr>
+</yaxx:Expr>
+<yaxx:CHAR59 id="721">;</yaxx:CHAR59>
+</yaxx:ExprStatement>
+</yaxx:Statement>
+</yaxx:SourceElement>
+</yaxx:SourceElements>
+</yaxx:Program>
+
