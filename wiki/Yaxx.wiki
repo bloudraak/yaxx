@@ -1,0 +1,124 @@
+#labels Phase-Deploy,Phase-Implementation,Featured
+= YAXX: YAcc eXtension to XML =
+The YAXX tool is an XML extension to YACC, a well-known compiler-compiler. Given a program
+and its YACC grammar, YAXX outputs the internal parse tree of the program as an XML
+document. The generated XML conforms to the DTD that is also generated from the YACC
+grammar and it can be transformed back to a legal program through XSLT.
+
+*What YAXX includes*
+  *Extension to Bison, a variant of YACC.
+  *Example grammars for ANSI C, Fortran 77 (from the Fortran parallelizing transformer
+FPT), SQL (from John R. Levine, et al book of Lex and Yacc, 2nd Edition), Java 1.1, XML
+itself, PHP, JavaScript (from the kde implementation) and many other. 
+
+= Background: How YACC works =
+The input to LEX/YACC are two files, one for the lexical analysis (LEX), the other for the
+syntax analysis (YACC). LEX is responsible for converting the program into a stream of
+tokens, and YACC is responsible for generating a parser from a set of production rules to
+construct a parse tree with both terminals and non-terminals. A terminal is a leaf of the
+parse tree which corresponds to the LEX tokens, while a non-terminal is the intermediate
+node of the parse tree that corresponds to one of left hand side (LHS) of a production
+rule, and it often has children which correspond to the right hand sides (RHS) of the
+rule. The root of the parse tree is the LHS of the start rule. The parse tree is built
+from-bottom-to-up by reducing the symbols popped from a stack into a single non-terminal
+and pushing it back to the symbol stack. Once the symbol stack is empty, the parse tree
+has been constructed. The decisions of when to do the reduction depends on the grammar.
+YACC uses LALR(1) grammar which can peek one symbol further in order to resolve conflicts
+by an finite state automata (FSA). Most programming languages such as ANSI C, Java,
+Fortran, etc. conform to the LALR(1) grammar, thus YACC has been widely used to construct
+context-free grammar parsers from these languages.
+
+= Why extending to XML? =
+*There are good reasons to do the extension:*
+  *_Visualize the actions of a YACC parser_. The parse tree is an important concept,
+however, YAXX does not output it so one can not see the construction of it. Therefore it
+is useful to write the parse tree out for visualizing the work of the YACC.
+Add your content here.
+  *_Abstract Syntax Tree (AST) generation using SAX_.  Most compilers use actions on the
+event of production rule reduction to construct their own Abstract Syntax Tree. Indeed not
+every intermediate state or non-terminals needs to be represented inside the compiler.
+However, since the construction of abstract syntax tree happens always at a reduction, one
+can use the simple API for XML (SAX) to parse the YACC parse tree when it is an XML
+document. Parse tree in XML enables the programming language parser to be used together
+with the XML parser or vice versa.
+  *_Source code extraction from XML document using XPath/XSLT_. Having the parse tree
+which contains all the syntax information, the AST can be queried using XPath expressions.
+The completeness of the syntax information on YAXX document can be exemplified by a simple
+XSLT yaxx.xsl that transforms it back the original source program. So the XML document is
+syntectically equivalent to the original program.
+  *_Conversions between a DTD and the YACC grammar_. The Document Type Definitions (DTD)
+declares the structure of a valid XML document, because of the similarity mentioned above,
+one can use YACC to generate an equivalent parser in order to verify the equivalent
+language of the XML document.
+  *_Extensibility made by orthogonal name spaces _. The YAXX document is self-contained in
+the name space of syntax yaxx:, while the semantic information can be added to the
+document using a different name space without interferring the syntax name space. It
+allows program analysis and transformation to bookkeep on the same document without losing
+information when passing on to another program analysis or transformation. It also permits
+clearly interfacing different programming tools in a defined way. 
+
+=How does it work?=
+*There are a number of decisions made in the implementation:*
+  *An element tag stack is used to record the lexical tokens and the reduced non-terminals
+bottom up. The elements are marked up using the tags from their role names in the
+production rules. Attributes can be used only for the grammar which uses the attributes,
+they should be avoided if it is not necessary. 
+  *During the parser generation, the DTD is output as the side-effect using the generated
+tables. The separate production rules are merged into one element definition using "|" and
+terminals are defined using the rules <!element foo (#PCDATA)> and the lexicon value of
+the terminals are saved as the content inside the pair of start/end tags. Non-terminals do
+not have text values, they contains the children correspond to the right hand side of the
+applied production rule. 
+  *Spatial performance is an issue only when the source program is huge. Normally the
+generated XML document can be 10 times larger than the original program because of the
+additional tags and intermediate non-terminal symbols. Since the parse tree YAXX document
+is equivalent to the original source code, we can pipe it to an XSLT transformer to query
+information and discard it once the information is obtained. If the XML document needs to
+be stored, one can use a compressor which significantly compress the size. 
+  *Modularity is achieved by changing the skeleton or template for the parser generation.
+The changes on the skeleton will not affect the normal work of YAXX. 
+*Install YAXX*
+_Requirements_
+  *[http://ftp.gnu.org/gnu/bison/bison-1.875.tar.gz Bison]
+  *[http://code.google.com/hosting/p/yaxx Yaxx]
+For yaxx-0.10 to work, you just need to copy the yaxx.c skeleton to the system path where
+bison is installed, for example _/usr/local/bin/bison._
+{{{
+        tar xvfz yaxx-0.10.tar.gz
+        cp yaxx*/bison/data/yaxx.c /usr/share/bison
+ }}}
+
+*Using YAXX*
+A working YACC parser has a grammar file with extension .y. In the makefile of the parser,
+the bison needs to be used with the new skeleton.
+{{{ 
+bison -S yaxx.c foo.y
+}}}  
+We use an ANSI C example to show the usage of YAXX. This document is not indended to show
+all the examples included in the release, such as Fortran 77, Java, Ada, SQL, XML, Telos,
+NFR, etc., not to mention hundreds of other YACC grammars. 
+Example: ANSI C
+Input
+  *An ANSI C gramma:
+           
+$YAXX/ansic/[http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/yaxx/yaxx/ansic/scan.l
+scan.l]
+           
+$YAXX/ansic/[http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/yaxx/yaxx/ansic/gram.y
+gram.y]
+  *An Ansi C program:
+           
+$YAXX/ansic/[http://cvs.sourceforge.net/cgi-bin/viewcvs.cgi/*checkout*/yaxx/yaxx/ansic/main.c
+main.c]
+Command 
+            make
+
+=Output= 
+An XML document which corresponds to the syntax tree (main.xml) and a DTD of the above XML
+document (ansic.dtd).
+In main.xml, the name space is defined as yaxx, the root element is file which is the RHS
+of the starting rule in the YACC grammar. 
+In ansic.dtd, the non-terminals are generated as composite elements _<!ELEMENT lhs
+(rhs...)>_; the terminals are generated as leaf element with string value _<!ELEMENT term
+(#PCDATA)>_. 
+In this way, the main.xml can be verified against the ansic.dtd by any XML parser.
