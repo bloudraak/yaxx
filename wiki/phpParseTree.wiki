@@ -1,6 +1,4 @@
 #labels Phase-Implementation,Phase-Deploy,Featured
-#The Parse_Tree extension generates an XML parse tree from a php source code.
-
 = Introduction =
 The Parse_Tree extension generates an XML parse tree from a php source code. For example:
 {{{
