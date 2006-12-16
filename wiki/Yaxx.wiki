@@ -1,3 +1,4 @@
+#summary Basic documentation of yaxx.
 #labels Phase-Deploy,Phase-Implementation,Featured
 = YAXX: YAcc eXtension to XML =
 The YAXX tool is an XML extension to YACC, a well-known compiler-compiler. Given a program
