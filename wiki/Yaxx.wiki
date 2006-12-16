@@ -6,10 +6,11 @@ document. The generated XML conforms to the DTD that is also generated from the 
 grammar and it can be transformed back to a legal program through XSLT.
 
 *What YAXX includes*
-  *Extension to Bison, a variant of YACC.
-  *Example grammars for ANSI C, Fortran 77 (from the Fortran parallelizing transformer
+  * Extension to Bison, a variant of YACC.
+  * Example grammars for ANSI C, Fortran 77 (from the Fortran parallelizing transformer
 FPT), SQL (from John R. Levine, et al book of Lex and Yacc, 2nd Edition), Java 1.1, XML
-itself, PHP, JavaScript (from the kde implementation) and many other. 
+itself, PHP, JavaScript (from the kde implementation) and many other.
+
 
 = Background: How YACC works =
 The input to LEX/YACC are two files, one for the lexical analysis (LEX), the other for the
