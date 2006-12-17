@@ -1,21 +1,28 @@
 #summary How to visualize Grammar and Syntax.
 #labels visualization,grammar,syntax
 
+How to visualize the output of YACC/YAXX.
+
 = Introduction =
 
-This page is under construction on how to visualize the output of YACC/YAXX.
+This page is under construction.
 
 = Details =
 
 * Grammar Visualization
-Yacc Grammar can be visualized through graphviz by the 
+
+YACC Grammar can be visualized through graphviz by the 
 following project [http://www.lo-res.org/~aaron/yaccviso/ YaccViso].
-A more general idea is to visualize the grammar as a program by itself
-using the program syntax visualization accompanied with yaxx, as the
-yacc grammar is also an instance of the a meta-grammar :-)
-Similarly we can construct grammar visualization not just for yacc, but
-also for other grammar-generators.
+
+A more general idea is to visualize the grammar as a program using our program syntax
+visualization with yaxx, as a YACC grammar is also an instance of the a meta-grammar
+(grammar of the grammar, see bison's implementation) :-)
+
+Similarly we can construct grammar visualization not just for YACC grammars, but
+also for other parser-generators's grammars.
 
 * Program Syntax Visualization 
-The YAXX parse tree can be visualized by the related ParserTree project, e.g. PHP.
 
+The YAXX parse tree can be visualized by the related phpParseTree project, e.g. PHP.
+
+William, can you link here to your description on how you visualized the php parse tree ? 
