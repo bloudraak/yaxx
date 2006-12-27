@@ -23,6 +23,4 @@ also for other parser-generators's grammars.
 
 * Program Syntax Visualization 
 
-The YAXX parse tree can be visualized by the related phpParseTree project, e.g. PHP.
-
-William, can you link here to your description on how you visualized the php parse tree ? 
+You can check the phpAspect blog if you want to know more about visualizing a parse tree with Graphviz: http://wcandillon.blogspot.com/2006/10/visualize-parse-tree-of-php-source.html
